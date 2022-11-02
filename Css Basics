@@ -1,0 +1,28 @@
+Cascading stylesheets is used for website layout
+inline CSS : style page directly in the html element inside the head tag
+internal CSS:we style the page using  <style> tag within a single document.
+
+External CSS: style the page using external CSS fill example.css file
+
+css format
+
+selector    property            value
+   a     {  background-color:  yellow;   }
+
+ web safe fonts are fonts that we do not need to import from website
+ we simply can apply to our text.
+
+ we can set margin use three ways
+
+ A.     { margin-top:5px ;     B  { margin:5px(top) 10px(right) 5px(bottom) 10px(left)
+         margin-bottom: 5px;   /method C is used if the opposite side have the same margin
+        margin-right: 10px;     C {margin: 5px(top and bottom) 10px(right and left)}
+        margin-left: 10px; }
+
+positioning
+
+static is the default  positioning
+Relative is the position relative to the default position
+fixed is a position which can not bi hidden when we scroll the web.
+initial return to original position
+Inherit this inherits the position of the parent tag.

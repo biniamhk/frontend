@@ -1,0 +1,45 @@
+-HTMl hyper text markup language.
+-html is the building block of the web
+-file must be saved in .html extension
+-index.html is the root home page of a website
+-<!DOCTYPE html> this is the starting html of Html 5
+-<!-- --> this is used to write some comments inside.
+-Lorem the press tab the you will get damy text for experiment
+-Inline level elements:Do not start on new line ex <span> <a> <img>
+-Block level elements: start on new line ex <div><h1><h6><p> <form>
+
+-<strong></strong> to make the test strong or bold
+-<em></em>  emphases  to make some italic style in text both are in line tags
+-<a href="http://google.com" target="_blank> used to link to internal or external pages and the target tag
+help us to redirect the link in to new tab instead of opening the target at the same tab.
+
+-Attribute gives more information to our tag ex<a href="> so href is attribute which gives information
+where to link
+-<ul><l></l></ul>
+ <ol><l></l></ol>  the above use to display a list of things in ordered and unordered manner
+ -creating table
+ <table><thead><tr><th> table have two parts head as <thead> and body as <tbody> and <tr> as table row
+ inside every row there is <th> table header names in <thead> tag and <td> in table data
+ <hr> puts horizontal line
+ <form action=something.js method=post>
+ <label>first name</label>
+ <input type="text" name="Fname"> type can be text,date,number or email name is used to communicate with js.
+ <label>Message</label>
+ <textarea>  </textarea> used to write some comments
+ <select>
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+         </select>     use to choose some values from drop down list
+
+  <div>
+         <input type="submit" name="submit" value="submit">
+     </div>  used to submit content of the form
+
+     HTML 5 semantic is te way we use to describe meaning to both the browser and developer so they understand
+     clearly about the web design.
+     <header/> web header
+     <nav> navigation bar</nav>
+     <section>
+     <aside> side bar
+     <article> like blog contents
+     <footer>footer like copyright
