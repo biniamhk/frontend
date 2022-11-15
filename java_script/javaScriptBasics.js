@@ -42,12 +42,17 @@ const person = {
 //adding element to already existing object
 person.email = 'biniam@java_script.se'
 //destructuring  is used to get some elements of the object to use them ddirectly
-const {firstName, lastName, address: {city}} = person
+const {
+    firstName,
+    lastName,
+    address: {
+        city
+    }
+} = person
 console.log(lastName)
 console.log(person)
 //Array of objects
-const todos = [
-    {
+const todos = [{
         id: 1,
         text: 'take out trash',
         isCompleted: true
@@ -145,41 +150,41 @@ const addNumbers = (n1, n2) => {
 console.log(addNumbers(3, 7))
 
 //oop constructor function
-function Person(firstName,lastName,dob){
-    this.firstName=firstName;
-    this.lastName=lastName;
+function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
     //we change the date format from string to Date
-    this.dob=new Date(dob);
+    this.dob = new Date(dob);
     //we can add function inside the constructor
     /*this.getFullName=function (){
         return `${this.firstName.toUpperCase()} ${this.lastName.toUpperCase()}`
     }*/
 }
 //using prototype instead of adding the function in the constructor
-Person.prototype.getFullName=function (){
+Person.prototype.getFullName = function () {
     return `${this.firstName.toUpperCase()} ${this.lastName.toUpperCase()}`
 }
 
 //instantiate object
-const person1=new Person("biniam","haile","05-20-1986");
+const person1 = new Person("biniam", "haile", "05-20-1986");
 console.log(person1);
 console.log(person1.getFullName());
 console.log(person1.dob.getFullYear());
 
 //Classes in java_script
 
-class Persons{
-    constructor(firstName,lastName,dob) {
-        this.firstName=firstName;
-        this.lastName=lastName;
+class Persons {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         //we change the date format from string to Date
-        this.dob=new Date(dob);
+        this.dob = new Date(dob);
     }
-    getFullName(){
+    getFullName() {
         return `${this.firstName.toUpperCase()} ${this.lastName.toUpperCase()}`
     }
 }
-const person2=new Persons("Eden","Yehdego","05-20-1986");
+const person2 = new Persons("Eden", "Yehdego", "05-20-1986");
 console.log(person2);
 console.log(person2.getFullName());
 console.log(person2.dob.getFullYear());
